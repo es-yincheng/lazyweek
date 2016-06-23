@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58577CB01D1BB87000EF7C6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58577CAF1D1BB87000EF7C6C /* main.m */; };
+		58577CB31D1BB87000EF7C6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58577CB21D1BB87000EF7C6C /* AppDelegate.m */; };
+		58577CB61D1BB87000EF7C6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58577CB51D1BB87000EF7C6C /* ViewController.m */; };
+		58577CB91D1BB87000EF7C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58577CB71D1BB87000EF7C6C /* Main.storyboard */; };
+		58577CBB1D1BB87000EF7C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58577CBA1D1BB87000EF7C6C /* Assets.xcassets */; };
+		58577CBE1D1BB87000EF7C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58577CBC1D1BB87000EF7C6C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58577CAB1D1BB87000EF7C6C /* lazyweek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazyweek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58577CAF1D1BB87000EF7C6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58577CB11D1BB87000EF7C6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58577CB21D1BB87000EF7C6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58577CB41D1BB87000EF7C6C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		58577CB51D1BB87000EF7C6C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		58577CB81D1BB87000EF7C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58577CBA1D1BB87000EF7C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58577CBD1D1BB87000EF7C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58577CBF1D1BB87000EF7C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58577CA81D1BB87000EF7C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58577CA21D1BB87000EF7C6C = {
+			isa = PBXGroup;
+			children = (
+				58577CAD1D1BB87000EF7C6C /* lazyweek */,
+				58577CAC1D1BB87000EF7C6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58577CAC1D1BB87000EF7C6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58577CAB1D1BB87000EF7C6C /* lazyweek.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58577CAD1D1BB87000EF7C6C /* lazyweek */ = {
+			isa = PBXGroup;
+			children = (
+				58577CB11D1BB87000EF7C6C /* AppDelegate.h */,
+				58577CB21D1BB87000EF7C6C /* AppDelegate.m */,
+				58577CB41D1BB87000EF7C6C /* ViewController.h */,
+				58577CB51D1BB87000EF7C6C /* ViewController.m */,
+				58577CB71D1BB87000EF7C6C /* Main.storyboard */,
+				58577CBA1D1BB87000EF7C6C /* Assets.xcassets */,
+				58577CBC1D1BB87000EF7C6C /* LaunchScreen.storyboard */,
+				58577CBF1D1BB87000EF7C6C /* Info.plist */,
+				58577CAE1D1BB87000EF7C6C /* Supporting Files */,
+			);
+			path = lazyweek;
+			sourceTree = "<group>";
+		};
+		58577CAE1D1BB87000EF7C6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58577CAF1D1BB87000EF7C6C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58577CAA1D1BB87000EF7C6C /* lazyweek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58577CC21D1BB87000EF7C6C /* Build configuration list for PBXNativeTarget "lazyweek" */;
+			buildPhases = (
+				58577CA71D1BB87000EF7C6C /* Sources */,
+				58577CA81D1BB87000EF7C6C /* Frameworks */,
+				58577CA91D1BB87000EF7C6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lazyweek;
+			productName = lazyweek;
+			productReference = 58577CAB1D1BB87000EF7C6C /* lazyweek.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58577CA31D1BB87000EF7C6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "尹成";
+				TargetAttributes = {
+					58577CAA1D1BB87000EF7C6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WY5KMYK455;
+					};
+				};
+			};
+			buildConfigurationList = 58577CA61D1BB87000EF7C6C /* Build configuration list for PBXProject "lazyweek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58577CA21D1BB87000EF7C6C;
+			productRefGroup = 58577CAC1D1BB87000EF7C6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58577CAA1D1BB87000EF7C6C /* lazyweek */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58577CA91D1BB87000EF7C6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58577CBE1D1BB87000EF7C6C /* LaunchScreen.storyboard in Resources */,
+				58577CBB1D1BB87000EF7C6C /* Assets.xcassets in Resources */,
+				58577CB91D1BB87000EF7C6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58577CA71D1BB87000EF7C6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58577CB61D1BB87000EF7C6C /* ViewController.m in Sources */,
+				58577CB31D1BB87000EF7C6C /* AppDelegate.m in Sources */,
+				58577CB01D1BB87000EF7C6C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58577CB71D1BB87000EF7C6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58577CB81D1BB87000EF7C6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58577CBC1D1BB87000EF7C6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58577CBD1D1BB87000EF7C6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58577CC01D1BB87000EF7C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58577CC11D1BB87000EF7C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58577CC31D1BB87000EF7C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = lazyweek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yc.lazyweek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58577CC41D1BB87000EF7C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = lazyweek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yc.lazyweek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58577CA61D1BB87000EF7C6C /* Build configuration list for PBXProject "lazyweek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58577CC01D1BB87000EF7C6C /* Debug */,
+				58577CC11D1BB87000EF7C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58577CC21D1BB87000EF7C6C /* Build configuration list for PBXNativeTarget "lazyweek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58577CC31D1BB87000EF7C6C /* Debug */,
+				58577CC41D1BB87000EF7C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58577CA31D1BB87000EF7C6C /* Project object */;
+}
