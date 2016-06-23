@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GuidViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    GuidViewController *vc = [[GuidViewController alloc] init];
+    self.window.rootViewController = vc;
+    
     return YES;
 }
 

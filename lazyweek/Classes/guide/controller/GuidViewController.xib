@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidViewController">
+            <connections>
+                <outlet property="delayLogin" destination="BWL-ds-JWZ" id="nOv-qD-8sU"/>
+                <outlet property="imageTitle" destination="olg-7o-8n1" id="NWu-G7-u3o"/>
+                <outlet property="scrollView" destination="tEH-sz-8hc" id="xni-T2-XKd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webchatLogin" destination="STS-CX-5EF" id="4t6-h3-B9b"/>
+                <outlet property="weiboLogin" destination="SNS-8a-ogZ" id="W5J-OH-4Rd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEH-sz-8hc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-8a-ogZ">
+                    <rect key="frame" x="0.0" y="515" width="299" height="42"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="B1b-cZ-nzg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="微博登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STS-CX-5EF">
+                    <rect key="frame" x="301" y="515" width="299" height="42"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="微信登陆">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWL-ds-JWZ">
+                    <rect key="frame" x="0.0" y="558" width="600" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="咱不登录，随便逛逛">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="明天，是更美好的追求" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olg-7o-8n1">
+                    <rect key="frame" x="10" y="447" width="580" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tEH-sz-8hc" secondAttribute="trailing" id="12e-o8-8X3"/>
+                <constraint firstItem="STS-CX-5EF" firstAttribute="top" secondItem="olg-7o-8n1" secondAttribute="bottom" constant="50" id="1Fw-uh-IRI"/>
+                <constraint firstAttribute="trailing" secondItem="olg-7o-8n1" secondAttribute="trailing" constant="10" id="8At-Zh-qeo"/>
+                <constraint firstItem="tEH-sz-8hc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A1U-lu-8jl"/>
+                <constraint firstItem="BWL-ds-JWZ" firstAttribute="top" secondItem="STS-CX-5EF" secondAttribute="bottom" constant="1" id="CuJ-oK-N2j"/>
+                <constraint firstItem="SNS-8a-ogZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DVD-Av-ECM"/>
+                <constraint firstItem="BWL-ds-JWZ" firstAttribute="height" secondItem="SNS-8a-ogZ" secondAttribute="height" id="ERT-0T-4yN"/>
+                <constraint firstItem="BWL-ds-JWZ" firstAttribute="top" secondItem="SNS-8a-ogZ" secondAttribute="bottom" constant="1" id="Kh8-Lf-fHA"/>
+                <constraint firstAttribute="bottom" secondItem="tEH-sz-8hc" secondAttribute="bottom" id="LCl-tB-ZFx"/>
+                <constraint firstItem="STS-CX-5EF" firstAttribute="height" secondItem="SNS-8a-ogZ" secondAttribute="height" id="Lzm-t5-erm"/>
+                <constraint firstItem="STS-CX-5EF" firstAttribute="width" secondItem="SNS-8a-ogZ" secondAttribute="width" id="O90-GD-YZg"/>
+                <constraint firstAttribute="trailing" secondItem="BWL-ds-JWZ" secondAttribute="trailing" id="VZS-Nm-euT"/>
+                <constraint firstItem="olg-7o-8n1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="e1T-bh-4gF"/>
+                <constraint firstAttribute="bottom" secondItem="BWL-ds-JWZ" secondAttribute="bottom" id="eCB-IQ-bf0"/>
+                <constraint firstAttribute="trailing" secondItem="STS-CX-5EF" secondAttribute="trailing" id="jed-k8-mXS"/>
+                <constraint firstItem="STS-CX-5EF" firstAttribute="leading" secondItem="SNS-8a-ogZ" secondAttribute="trailing" constant="2" id="lZ0-II-7PW"/>
+                <constraint firstItem="tEH-sz-8hc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ta6-Fi-cMD"/>
+                <constraint firstItem="BWL-ds-JWZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x3a-mc-xYq"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
