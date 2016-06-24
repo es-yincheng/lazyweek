@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E85AD464FC05A9720ED2F92 /* libPods-lazyweek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A67EE29F9B2ADED1E8F1CB /* libPods-lazyweek.a */; };
 		58577CB01D1BB87000EF7C6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58577CAF1D1BB87000EF7C6C /* main.m */; };
 		58577CB31D1BB87000EF7C6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58577CB21D1BB87000EF7C6C /* AppDelegate.m */; };
 		58577CB61D1BB87000EF7C6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58577CB51D1BB87000EF7C6C /* ViewController.m */; };
@@ -313,9 +314,28 @@
 		58577F601D1BEEEE00EF7C6C /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58577F5C1D1BEEEE00EF7C6C /* 2@2x.png */; };
 		58577F611D1BEEEE00EF7C6C /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58577F5D1D1BEEEE00EF7C6C /* 3@2x.png */; };
 		58577F621D1BEEEE00EF7C6C /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58577F5E1D1BEEEE00EF7C6C /* 4@2x.png */; };
+		586EF9811D1CC320003E7ED0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9801D1CC320003E7ED0 /* HomeViewController.m */; };
+		586EF9851D1CC628003E7ED0 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9831D1CC628003E7ED0 /* HomeTableViewCell.m */; };
+		586EF9861D1CC628003E7ED0 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586EF9841D1CC628003E7ED0 /* HomeTableViewCell.xib */; };
+		586EF98B1D1CDAAC003E7ED0 /* NetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF98A1D1CDAAC003E7ED0 /* NetWorking.m */; };
+		586EF98E1D1CE09C003E7ED0 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF98D1D1CE09C003E7ED0 /* BaseModel.m */; };
+		586EF9911D1CE0AC003E7ED0 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9901D1CE0AC003E7ED0 /* HomeModel.m */; };
+		586EF9941D1CE245003E7ED0 /* Home_EVENT_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9931D1CE245003E7ED0 /* Home_EVENT_Model.m */; };
+		586EF9971D1CE302003E7ED0 /* Home_LEO_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9961D1CE302003E7ED0 /* Home_LEO_Model.m */; };
+		586EF99F1D1CE831003E7ED0 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF99B1D1CE831003E7ED0 /* MBProgressHUD+MJ.m */; };
+		586EF9A01D1CE831003E7ED0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 586EF99C1D1CE831003E7ED0 /* MBProgressHUD.bundle */; };
+		586EF9A11D1CE831003E7ED0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF99E1D1CE831003E7ED0 /* MBProgressHUD.m */; };
+		586EF9A41D1CF69A003E7ED0 /* BaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9A31D1CF69A003E7ED0 /* BaseAPI.m */; };
+		586EF9A71D1CF731003E7ED0 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9A61D1CF731003E7ED0 /* BaseService.m */; };
+		586EF9AA1D1CF73B003E7ED0 /* HomeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9A91D1CF73B003E7ED0 /* HomeService.m */; };
+		586EF9AE1D1D125B003E7ED0 /* Home_EVENT_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9AC1D1D125B003E7ED0 /* Home_EVENT_Cell.m */; };
+		586EF9AF1D1D125B003E7ED0 /* Home_EVENT_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586EF9AD1D1D125B003E7ED0 /* Home_EVENT_Cell.xib */; };
+		586EF9B51D1D31E5003E7ED0 /* YCRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9B41D1D31E5003E7ED0 /* YCRefreshHeader.m */; };
+		586EF9B81D1D3BB2003E7ED0 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9B71D1D3BB2003E7ED0 /* HomeHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482AC3536FAFE665567763C5 /* Pods-lazyweek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazyweek.release.xcconfig"; path = "Pods/Target Support Files/Pods-lazyweek/Pods-lazyweek.release.xcconfig"; sourceTree = "<group>"; };
 		58577CAB1D1BB87000EF7C6C /* lazyweek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazyweek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58577CAF1D1BB87000EF7C6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58577CB11D1BB87000EF7C6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -627,6 +647,41 @@
 		58577F5C1D1BEEEE00EF7C6C /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
 		58577F5D1D1BEEEE00EF7C6C /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
 		58577F5E1D1BEEEE00EF7C6C /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@2x.png"; sourceTree = "<group>"; };
+		586EF97F1D1CC320003E7ED0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		586EF9801D1CC320003E7ED0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		586EF9821D1CC628003E7ED0 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		586EF9831D1CC628003E7ED0 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		586EF9841D1CC628003E7ED0 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		586EF9891D1CDAAC003E7ED0 /* NetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorking.h; sourceTree = "<group>"; };
+		586EF98A1D1CDAAC003E7ED0 /* NetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorking.m; sourceTree = "<group>"; };
+		586EF98C1D1CE09C003E7ED0 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		586EF98D1D1CE09C003E7ED0 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		586EF98F1D1CE0AC003E7ED0 /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		586EF9901D1CE0AC003E7ED0 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		586EF9921D1CE245003E7ED0 /* Home_EVENT_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home_EVENT_Model.h; sourceTree = "<group>"; };
+		586EF9931D1CE245003E7ED0 /* Home_EVENT_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home_EVENT_Model.m; sourceTree = "<group>"; };
+		586EF9951D1CE302003E7ED0 /* Home_LEO_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home_LEO_Model.h; sourceTree = "<group>"; };
+		586EF9961D1CE302003E7ED0 /* Home_LEO_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home_LEO_Model.m; sourceTree = "<group>"; };
+		586EF99A1D1CE831003E7ED0 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		586EF99B1D1CE831003E7ED0 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		586EF99C1D1CE831003E7ED0 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		586EF99D1D1CE831003E7ED0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		586EF99E1D1CE831003E7ED0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		586EF9A21D1CF69A003E7ED0 /* BaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPI.h; sourceTree = "<group>"; };
+		586EF9A31D1CF69A003E7ED0 /* BaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPI.m; sourceTree = "<group>"; };
+		586EF9A51D1CF731003E7ED0 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		586EF9A61D1CF731003E7ED0 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
+		586EF9A81D1CF73B003E7ED0 /* HomeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeService.h; sourceTree = "<group>"; };
+		586EF9A91D1CF73B003E7ED0 /* HomeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeService.m; sourceTree = "<group>"; };
+		586EF9AB1D1D125B003E7ED0 /* Home_EVENT_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home_EVENT_Cell.h; sourceTree = "<group>"; };
+		586EF9AC1D1D125B003E7ED0 /* Home_EVENT_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home_EVENT_Cell.m; sourceTree = "<group>"; };
+		586EF9AD1D1D125B003E7ED0 /* Home_EVENT_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home_EVENT_Cell.xib; sourceTree = "<group>"; };
+		586EF9B31D1D31E5003E7ED0 /* YCRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRefreshHeader.h; sourceTree = "<group>"; };
+		586EF9B41D1D31E5003E7ED0 /* YCRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRefreshHeader.m; sourceTree = "<group>"; };
+		586EF9B61D1D3BB2003E7ED0 /* HomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
+		586EF9B71D1D3BB2003E7ED0 /* HomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderView.m; sourceTree = "<group>"; };
+		6657BD13AD7B584335BC7D8F /* Pods-lazyweek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazyweek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lazyweek/Pods-lazyweek.debug.xcconfig"; sourceTree = "<group>"; };
+		A5A67EE29F9B2ADED1E8F1CB /* libPods-lazyweek.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lazyweek.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -634,6 +689,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E85AD464FC05A9720ED2F92 /* libPods-lazyweek.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +701,8 @@
 			children = (
 				58577CAD1D1BB87000EF7C6C /* lazyweek */,
 				58577CAC1D1BB87000EF7C6C /* Products */,
+				7C4ACE893D0941AB2DDC5002 /* Pods */,
+				A484F13F8EC93B4BEA091AED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -685,6 +743,7 @@
 		58577CC51D1BB8B200EF7C6C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				586EF9871D1CDA88003E7ED0 /* Tool */,
 				58577CC61D1BB8B200EF7C6C /* guide */,
 				58577CC91D1BB8B200EF7C6C /* home */,
 				58577CCC1D1BB8B200EF7C6C /* Model */,
@@ -732,6 +791,8 @@
 		58577CCA1D1BB8B200EF7C6C /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				586EF97F1D1CC320003E7ED0 /* HomeViewController.h */,
+				586EF9801D1CC320003E7ED0 /* HomeViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -739,6 +800,12 @@
 		58577CCB1D1BB8B200EF7C6C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				586EF9821D1CC628003E7ED0 /* HomeTableViewCell.h */,
+				586EF9831D1CC628003E7ED0 /* HomeTableViewCell.m */,
+				586EF9841D1CC628003E7ED0 /* HomeTableViewCell.xib */,
+				586EF9AB1D1D125B003E7ED0 /* Home_EVENT_Cell.h */,
+				586EF9AC1D1D125B003E7ED0 /* Home_EVENT_Cell.m */,
+				586EF9AD1D1D125B003E7ED0 /* Home_EVENT_Cell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -746,6 +813,14 @@
 		58577CCC1D1BB8B200EF7C6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				586EF98C1D1CE09C003E7ED0 /* BaseModel.h */,
+				586EF98D1D1CE09C003E7ED0 /* BaseModel.m */,
+				586EF98F1D1CE0AC003E7ED0 /* HomeModel.h */,
+				586EF9901D1CE0AC003E7ED0 /* HomeModel.m */,
+				586EF9921D1CE245003E7ED0 /* Home_EVENT_Model.h */,
+				586EF9931D1CE245003E7ED0 /* Home_EVENT_Model.m */,
+				586EF9951D1CE302003E7ED0 /* Home_LEO_Model.h */,
+				586EF9961D1CE302003E7ED0 /* Home_LEO_Model.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1109,6 +1184,95 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		586EF9871D1CDA88003E7ED0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				586EF9B01D1D31C7003E7ED0 /* YCKit */,
+				586EF9981D1CE831003E7ED0 /* OhterLib */,
+				586EF9881D1CDA9C003E7ED0 /* NetWorking */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		586EF9881D1CDA9C003E7ED0 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				586EF9891D1CDAAC003E7ED0 /* NetWorking.h */,
+				586EF98A1D1CDAAC003E7ED0 /* NetWorking.m */,
+				586EF9A21D1CF69A003E7ED0 /* BaseAPI.h */,
+				586EF9A31D1CF69A003E7ED0 /* BaseAPI.m */,
+				586EF9A51D1CF731003E7ED0 /* BaseService.h */,
+				586EF9A61D1CF731003E7ED0 /* BaseService.m */,
+				586EF9A81D1CF73B003E7ED0 /* HomeService.h */,
+				586EF9A91D1CF73B003E7ED0 /* HomeService.m */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		586EF9981D1CE831003E7ED0 /* OhterLib */ = {
+			isa = PBXGroup;
+			children = (
+				586EF9991D1CE831003E7ED0 /* MBProgressHUD */,
+			);
+			path = OhterLib;
+			sourceTree = "<group>";
+		};
+		586EF9991D1CE831003E7ED0 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				586EF99A1D1CE831003E7ED0 /* MBProgressHUD+MJ.h */,
+				586EF99B1D1CE831003E7ED0 /* MBProgressHUD+MJ.m */,
+				586EF99C1D1CE831003E7ED0 /* MBProgressHUD.bundle */,
+				586EF99D1D1CE831003E7ED0 /* MBProgressHUD.h */,
+				586EF99E1D1CE831003E7ED0 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		586EF9B01D1D31C7003E7ED0 /* YCKit */ = {
+			isa = PBXGroup;
+			children = (
+				586EF9B11D1D31C7003E7ED0 /* RefreshFooter */,
+				586EF9B21D1D31C7003E7ED0 /* RefreshHeader */,
+				586EF9B61D1D3BB2003E7ED0 /* HomeHeaderView.h */,
+				586EF9B71D1D3BB2003E7ED0 /* HomeHeaderView.m */,
+			);
+			path = YCKit;
+			sourceTree = "<group>";
+		};
+		586EF9B11D1D31C7003E7ED0 /* RefreshFooter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RefreshFooter;
+			sourceTree = "<group>";
+		};
+		586EF9B21D1D31C7003E7ED0 /* RefreshHeader */ = {
+			isa = PBXGroup;
+			children = (
+				586EF9B31D1D31E5003E7ED0 /* YCRefreshHeader.h */,
+				586EF9B41D1D31E5003E7ED0 /* YCRefreshHeader.m */,
+			);
+			path = RefreshHeader;
+			sourceTree = "<group>";
+		};
+		7C4ACE893D0941AB2DDC5002 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6657BD13AD7B584335BC7D8F /* Pods-lazyweek.debug.xcconfig */,
+				482AC3536FAFE665567763C5 /* Pods-lazyweek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A484F13F8EC93B4BEA091AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5A67EE29F9B2ADED1E8F1CB /* libPods-lazyweek.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1116,9 +1280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58577CC21D1BB87000EF7C6C /* Build configuration list for PBXNativeTarget "lazyweek" */;
 			buildPhases = (
+				5336C03929765CC086033178 /* [CP] Check Pods Manifest.lock */,
 				58577CA71D1BB87000EF7C6C /* Sources */,
 				58577CA81D1BB87000EF7C6C /* Frameworks */,
 				58577CA91D1BB87000EF7C6C /* Resources */,
+				E53852C03BF1869FB6710F6C /* [CP] Embed Pods Frameworks */,
+				3F4846519EC301C0E339BC98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1241,6 +1408,7 @@
 				58577ECF1D1BB8B300EF7C6C /* ic_tip_heart.png in Resources */,
 				58577EB71D1BB8B300EF7C6C /* ic_nav_white_heart_on@2x.png in Resources */,
 				58577E491D1BB8B300EF7C6C /* ic_c_montain@3x.png in Resources */,
+				586EF9AF1D1D125B003E7ED0 /* Home_EVENT_Cell.xib in Resources */,
 				58577E0A1D1BB8B300EF7C6C /* btnBus_unchoose@2x.png in Resources */,
 				58577E951D1BB8B300EF7C6C /* ic_me_back@3x.png in Resources */,
 				58577EEA1D1BB8B300EF7C6C /* Icon-60@2x.png in Resources */,
@@ -1279,6 +1447,7 @@
 				58577E241D1BB8B300EF7C6C /* frame_bottom@2x.png in Resources */,
 				58577E1D1D1BB8B300EF7C6C /* discount@2x.png in Resources */,
 				58577E0C1D1BB8B300EF7C6C /* btnCar_unchoose@2x.png in Resources */,
+				586EF9861D1CC628003E7ED0 /* HomeTableViewCell.xib in Resources */,
 				58577EA91D1BB8B300EF7C6C /* ic_nav_left_white@3x.png in Resources */,
 				58577E7C1D1BB8B300EF7C6C /* ic_location_basketball@2x.png in Resources */,
 				58577E201D1BB8B300EF7C6C /* down_arrow@2x.png in Resources */,
@@ -1311,6 +1480,7 @@
 				58577E641D1BB8B300EF7C6C /* ic_c_stage@2x.png in Resources */,
 				58577E481D1BB8B300EF7C6C /* ic_c_montain@2x.png in Resources */,
 				58577E2D1D1BB8B300EF7C6C /* ic_bar_small_small@3x.png in Resources */,
+				586EF9A01D1CE831003E7ED0 /* MBProgressHUD.bundle in Resources */,
 				58577ECE1D1BB8B300EF7C6C /* ic_tip_cal@3x.png in Resources */,
 				58577EA21D1BB8B300EF7C6C /* ic_nav_help@2x.png in Resources */,
 				58577E971D1BB8B300EF7C6C /* ic_movie_small_small@3x.png in Resources */,
@@ -1474,15 +1644,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F4846519EC301C0E339BC98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lazyweek/Pods-lazyweek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5336C03929765CC086033178 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E53852C03BF1869FB6710F6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lazyweek/Pods-lazyweek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58577CA71D1BB87000EF7C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586EF99F1D1CE831003E7ED0 /* MBProgressHUD+MJ.m in Sources */,
+				586EF9B81D1D3BB2003E7ED0 /* HomeHeaderView.m in Sources */,
+				586EF9A41D1CF69A003E7ED0 /* BaseAPI.m in Sources */,
+				586EF9AA1D1CF73B003E7ED0 /* HomeService.m in Sources */,
+				586EF98B1D1CDAAC003E7ED0 /* NetWorking.m in Sources */,
 				58577CB61D1BB87000EF7C6C /* ViewController.m in Sources */,
+				586EF98E1D1CE09C003E7ED0 /* BaseModel.m in Sources */,
 				58577CB31D1BB87000EF7C6C /* AppDelegate.m in Sources */,
+				586EF9851D1CC628003E7ED0 /* HomeTableViewCell.m in Sources */,
+				586EF9971D1CE302003E7ED0 /* Home_LEO_Model.m in Sources */,
+				586EF9941D1CE245003E7ED0 /* Home_EVENT_Model.m in Sources */,
 				58577CB01D1BB87000EF7C6C /* main.m in Sources */,
+				586EF9A11D1CE831003E7ED0 /* MBProgressHUD.m in Sources */,
+				586EF9B51D1D31E5003E7ED0 /* YCRefreshHeader.m in Sources */,
+				586EF9811D1CC320003E7ED0 /* HomeViewController.m in Sources */,
+				586EF9AE1D1D125B003E7ED0 /* Home_EVENT_Cell.m in Sources */,
 				58577F591D1BBA4C00EF7C6C /* GuidViewController.m in Sources */,
+				586EF9911D1CE0AC003E7ED0 /* HomeModel.m in Sources */,
+				586EF9A71D1CF731003E7ED0 /* BaseService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1545,7 +1778,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1583,7 +1816,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1592,6 +1825,7 @@
 		};
 		58577CC31D1BB87000EF7C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6657BD13AD7B584335BC7D8F /* Pods-lazyweek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1607,6 +1841,7 @@
 		};
 		58577CC41D1BB87000EF7C6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482AC3536FAFE665567763C5 /* Pods-lazyweek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1639,6 +1874,7 @@
 				58577CC41D1BB87000EF7C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

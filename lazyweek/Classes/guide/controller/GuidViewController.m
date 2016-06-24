@@ -63,12 +63,7 @@ typedef NS_ENUM(NSUInteger, Direction) {
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-//    for (int x = 1; x < 5; x ++) {
-//        [self.imageArray addObject:[NSString stringWithFormat:@"%d",x]];
-//    }
-    
-    
-//    self.imageView.image = self.currentImage;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,6 +72,11 @@ typedef NS_ENUM(NSUInteger, Direction) {
 }
 
 #pragma mark - custom
+//- (void)setImageArray:(NSMutableArray *)imageArray{
+//    self.imageArray = imageArray;
+//    [self setScrollView];
+//}
+
 - (void)startAnimatingScrl
 {
     if (self.imageArray.count) {

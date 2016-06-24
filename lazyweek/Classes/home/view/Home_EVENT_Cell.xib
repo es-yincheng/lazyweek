@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Home_EVENT_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="265.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="035-CT-hKX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="035-CT-hKX" secondAttribute="height" multiplier="350:250" id="WwV-9e-reB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text=" 精选 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-9N-nRC">
+                        <rect key="frame" x="15" y="236" width="30" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Qa8-35-Ab8"/>
+                            <constraint firstAttribute="height" constant="20" id="YwS-O1-jIw"/>
+                            <constraint firstAttribute="width" constant="30" id="vCO-jv-RwA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Qa8-35-Ab8"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="毕业不说再见，应为后会有期" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pM-Ek-Mpe">
+                        <rect key="frame" x="52" y="238" width="182" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.1960784314" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wPh-9N-nRC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="74i-Ed-pQi"/>
+                    <constraint firstItem="035-CT-hKX" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="7EP-dh-lL5"/>
+                    <constraint firstItem="wPh-9N-nRC" firstAttribute="top" secondItem="035-CT-hKX" secondAttribute="bottom" constant="7.5" id="BG4-Sm-RPV"/>
+                    <constraint firstItem="035-CT-hKX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="KC7-ak-QLA"/>
+                    <constraint firstItem="3pM-Ek-Mpe" firstAttribute="centerY" secondItem="wPh-9N-nRC" secondAttribute="centerY" id="KEH-OJ-77P"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wPh-9N-nRC" secondAttribute="bottom" constant="1" id="KbH-M4-Iti"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="035-CT-hKX" secondAttribute="trailing" constant="-8" id="SUo-0K-bGM"/>
+                    <constraint firstItem="035-CT-hKX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="smj-Xb-VCw"/>
+                    <constraint firstItem="3pM-Ek-Mpe" firstAttribute="leading" secondItem="wPh-9N-nRC" secondAttribute="trailing" constant="7.5" id="t1w-3F-oxn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="itemImage" destination="035-CT-hKX" id="evr-yh-hPE"/>
+                <outlet property="itemTitle" destination="3pM-Ek-Mpe" id="N4S-pU-Gxd"/>
+                <outlet property="itemType" destination="wPh-9N-nRC" id="Nej-r4-ycj"/>
+            </connections>
+            <point key="canvasLocation" x="225" y="565"/>
+        </tableViewCell>
+    </objects>
+</document>

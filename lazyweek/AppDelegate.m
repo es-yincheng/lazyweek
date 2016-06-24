@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GuidViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-    GuidViewController *vc = [[GuidViewController alloc] init];
+    HomeViewController *vc = [[HomeViewController alloc] init];
     self.window.rootViewController = vc;
     
     return YES;
