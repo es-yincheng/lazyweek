@@ -12,4 +12,6 @@ pod 'MJRefresh'
 
 pod 'MJExtension'
 
+pod 'pop', '~> 1.0'
+
 end

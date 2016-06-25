@@ -16,14 +16,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="265.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="035-CT-hKX">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="035-CT-hKX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="035-CT-hKX" secondAttribute="height" multiplier="350:250" id="WwV-9e-reB"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text=" 精选 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-9N-nRC">
-                        <rect key="frame" x="15" y="236" width="30" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="毕业不说再见，应为后会有期" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pM-Ek-Mpe">
+                        <rect key="frame" x="53" y="238" width="182" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.1960784314" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text=" 精选 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-9N-nRC">
+                        <rect key="frame" x="15" y="237" width="30" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Qa8-35-Ab8"/>
                             <constraint firstAttribute="height" constant="20" id="YwS-O1-jIw"/>
@@ -37,12 +43,6 @@
                                 <exclude reference="Qa8-35-Ab8"/>
                             </mask>
                         </variation>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="毕业不说再见，应为后会有期" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pM-Ek-Mpe">
-                        <rect key="frame" x="52" y="238" width="182" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="0.20000000000000001" green="0.1960784314" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>

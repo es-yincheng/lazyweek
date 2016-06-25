@@ -17,6 +17,10 @@
 #import "Home_EVENT_Cell.h"
 #import "YCRefreshHeader.h"
 #import "HomeHeaderView.h"
+#import <POP/POP.h>
+
+#define MenuViewOriginY (- (CGRectGetHeight([UIScreen mainScreen].bounds) - 88))
+#define FrontViewOriginY (CGRectGetHeight([UIScreen mainScreen].bounds) - 88)
 
 NSString* const identifierString = @"HomeTableViewCell";
 
@@ -24,6 +28,11 @@ NSString* const identifierString = @"HomeTableViewCell";
     NSInteger pageIndex;
 }
 
+@property (nonatomic, strong) UIView *backView;
+@property (nonatomic, strong) UIView *menuView;
+@property (nonatomic, strong) UIView *searchView;
+@property (nonatomic, strong) UIView *navigationView;
+@property (nonatomic, strong) UIView *frontView;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) HomeHeaderView *headerView;
@@ -35,8 +44,17 @@ NSString* const identifierString = @"HomeTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.headerView];
-    [self.view addSubview:self.tableView];
+    [self.view addSubview:self.backView];
+    
+//    [self.view addSubview:self.headerView];
+//    [self.view addSubview:self.tableView];
+//    [self.view addSubview:self.navigationView];
+    [self.view addSubview:self.menuView];
+    [self.view addSubview:self.searchView];
+    
+    [self.view addSubview:self.backView];
+    
+    [self.view addSubview:self.frontView];
     
     pageIndex = 0;
     [self getHomeItemsAgain];
@@ -52,11 +70,81 @@ NSString* const identifierString = @"HomeTableViewCell";
 }
 
 #pragma mark - custom
-- (void)getHomeItemsFirst{
-//    pageIndex = 0;
-//    [self.dataSource removeAllObjects];
-//    [self getHomeItemsAgain];
-    [self endRefresh];
+- (void)showMenuView{
+    [self hiddenHomeView];
+    
+//    POPSpringAnimation *menuSpring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+//    menuSpring.toValue = @(0);
+//    menuSpring.beginTime = CACurrentMediaTime();
+//    [self.menuView pop_addAnimation:menuSpring forKey:@"menuShow"];
+}
+
+- (void)hiddenMenuView{
+    POPSpringAnimation *menuSpring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    menuSpring.toValue = @(MenuViewOriginY);
+    menuSpring.beginTime = CACurrentMediaTime();
+    [self.tableView pop_addAnimation:menuSpring forKey:@"menuHidden"];
+}
+
+- (void)showSearchView{
+    [self hiddenHomeView];
+    
+    POPSpringAnimation *menuSpring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    menuSpring.toValue = @(0);
+    menuSpring.beginTime = CACurrentMediaTime();
+    [self.menuView pop_addAnimation:menuSpring forKey:@"searchShow"];
+}
+
+- (void)hiddenSearchView{
+    POPSpringAnimation *menuSpring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    menuSpring.toValue = @(MenuViewOriginY);
+    menuSpring.beginTime = CACurrentMediaTime();
+    [self.tableView pop_addAnimation:menuSpring forKey:@"searchHidden"];
+}
+
+- (void)hiddenHomeView{
+//    self.frontView.hidden = NO;
+    
+    
+    POPSpringAnimation *homeSpring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+        homeSpring.toValue = @(self.view.bounds.size.height - 88);
+        homeSpring.beginTime = CACurrentMediaTime();
+        [self.backView.layer pop_addAnimation:homeSpring forKey:@"homeHidden"];
+    POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+    anim.toValue = [NSValue valueWithCGPoint:CGPointMake(1, 0.8)];
+    anim.springBounciness = 4.0;
+    anim.beginTime = CACurrentMediaTime();
+    anim.completionBlock = ^(POPAnimation *anim, BOOL finished) {
+        if (finished) {
+            NSLog(@"Animation finished!");
+        }
+    };
+    [self.backView.layer pop_addAnimation:anim forKey:@"backViewHidden"];
+    
+    
+    
+    
+    
+//    POPSpringAnimation *homeSpring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+//    homeSpring.toValue = @(FrontViewOriginY);
+//    homeSpring.beginTime = CACurrentMediaTime();
+//    [self.navigationView pop_addAnimation:homeSpring forKey:@"homeHidden"];
+//    
+//    self.tableView.frame = CGRectMake(0, FrontViewOriginY, self.tableView.frame.size.width, self.tableView.frame.size.height);
+}
+
+- (void)showHomeView{
+    self.frontView.hidden = YES;
+    [self hiddenMenuView];
+    [self hiddenSearchView];
+    
+    self.navigationView.backgroundColor = [UIColor whiteColor];
+    
+    POPSpringAnimation *homeSpring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    homeSpring.toValue = @(0);
+    homeSpring.beginTime = CACurrentMediaTime();
+    [self.navigationView pop_addAnimation:homeSpring forKey:@"homShow"];
+    
 }
 
 - (void)getHomeItemsAgain{
@@ -118,25 +206,20 @@ NSString* const identifierString = @"HomeTableViewCell";
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    self.headerView.frame = CGRectMake(0, ABS(scrollView.contentOffset.y), self.view.bounds.size.width, ABS(scrollView.contentOffset.y));
-    NSLog(@"scrollView:%f",scrollView.contentOffset.y);
+//    self.headerView.frame = CGRectMake(0, ABS(scrollView.contentOffset.y), self.view.bounds.size.width, ABS(scrollView.contentOffset.y));
+//    NSLog(@"scrollView:%f",scrollView.contentOffset.y);
 }
 
 #pragma mark - lazy
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+        _tableView = [[UITableView alloc] initWithFrame:
+                      CGRectMake(0, 64, self.navigationView.bounds.size.width, self.view.bounds.size.height-64)];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.estimatedRowHeight = 300;
         _tableView.rowHeight = UITableViewAutomaticDimension;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-//        _tableView.mj_header = [YCRefreshHeader headerWithRefreshingBlock:^{
-//            [self getHomeItemsFirst];
-//        }];
-
-//        self.tableView.mj_header = [YCRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(getHomeItemsFirst)];
-        
         _tableView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
             [self getHomeItemsAgain];
         }];
@@ -160,6 +243,79 @@ NSString* const identifierString = @"HomeTableViewCell";
         _headerView.backgroundColor = [UIColor redColor];
     }
     return _headerView;
+}
+
+- (UIView *)navigationView{
+    if (!_navigationView) {
+        _navigationView = [[UIView alloc] init];
+        _navigationView.backgroundColor = [UIColor whiteColor];
+        _navigationView.frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), 64);
+        
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 20, _navigationView.bounds.size.width, 44)];
+        view.backgroundColor = [UIColor whiteColor];
+        [_navigationView addSubview:view];
+        
+        
+        UILabel *titleLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, _navigationView.bounds.size.width, view.bounds.size.height)];
+        titleLb.textAlignment = NSTextAlignmentCenter;
+        titleLb.text = @"懒人周末";
+        titleLb.font = [UIFont systemFontOfSize:15];
+        titleLb.tintColor = [UIColor grayColor];
+        [view  addSubview:titleLb];
+        
+        UILabel *line = [[UILabel alloc] initWithFrame:CGRectMake(0, view.bounds.size.height-0.5, view.bounds.size.width, 0.5)];
+        line.backgroundColor = [UIColor lightGrayColor];
+        [view addSubview:line];
+        
+        UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 2 + 5, 30, 30)];
+        [leftButton setImage:[UIImage imageNamed:@"cat_me@3x"] forState:UIControlStateNormal];
+        [leftButton addTarget:self action:@selector(showMenuView) forControlEvents:UIControlEventTouchUpInside];
+        [view addSubview:leftButton];
+        
+        UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(view.bounds.size.width - 10 - 30, 7 + 5, 30, 30)];
+        [rightButton setImage:[UIImage imageNamed:@"ic_nav_search@3x"] forState:UIControlStateNormal];
+        [rightButton addTarget:self action:@selector(showSearchView) forControlEvents:UIControlEventTouchUpInside];
+        [view addSubview:rightButton];
+        
+    }
+    return _navigationView;
+}
+
+- (UIView *)menuView{
+    if (!_menuView) {
+        _menuView = [[UIView alloc] initWithFrame:CGRectMake(0, MenuViewOriginY, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds) - 88)];
+        _menuView.backgroundColor = [UIColor greenColor];
+    }
+    return _menuView;
+}
+
+- (UIView *)searchView{
+    if (!_searchView) {
+        _searchView = [[UIView alloc] initWithFrame:CGRectMake(0, MenuViewOriginY, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds) -88)];
+        _searchView.backgroundColor = [UIColor darkGrayColor];
+    }
+    return _searchView;
+}
+
+- (UIView *)frontView{
+    if (!_frontView) {
+        _frontView = [[UIView alloc] initWithFrame:CGRectMake(0, FrontViewOriginY, CGRectGetWidth([UIScreen mainScreen].bounds), 88)];
+        _frontView.hidden = YES;
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showHomeView)];
+        [_frontView addGestureRecognizer:tapGesture];
+    }
+    return _frontView;
+}
+
+- (UIView *)backView{
+    if (!_backView) {
+        _backView = [[UIView alloc] initWithFrame:self.view.frame];
+        _backView.backgroundColor = [UIColor whiteColor];
+        [_backView addSubview:self.navigationView];
+        [_backView addSubview:self.tableView];
+    }
+    return _backView;
 }
 
 @end

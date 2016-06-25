@@ -7,6 +7,7 @@
 //
 
 #import "GuidViewController.h"
+#import "HomeViewController.h"
 
 typedef NS_ENUM(NSUInteger, Direction) {
     DirectionUnknown,
@@ -32,14 +33,6 @@ typedef NS_ENUM(NSUInteger, Direction) {
 @property (weak, nonatomic  ) IBOutlet UIButton           *webchatLogin;
 @property (weak, nonatomic  ) IBOutlet UIButton           *delayLogin;
 
-
-
-
-
-
-
-
-
 @property (nonatomic, strong) UIImage        *currentImage;
 //@property (nonatomic, strong) NSMutableArray *imageArray;
 @property (nonatomic, assign) NSInteger      currentPage;
@@ -63,7 +56,11 @@ typedef NS_ENUM(NSUInteger, Direction) {
 }
 
 - (void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 
+- (void)viewWillDisappear:(BOOL)animated{
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,6 +73,10 @@ typedef NS_ENUM(NSUInteger, Direction) {
 //    self.imageArray = imageArray;
 //    [self setScrollView];
 //}
+- (IBAction)loginWithNone:(id)sender {
+    HomeViewController *vc = [[HomeViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)startAnimatingScrl
 {

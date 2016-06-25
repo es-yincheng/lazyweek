@@ -40,7 +40,7 @@
 @property (nonatomic, assign) NSNumber     *viewed_num;
 @property (nonatomic, copy  ) NSString     *biz_phone;
 @property (nonatomic, copy  ) NSString     *item_type;
-@property (nonatomic, assign) NSNumber     *price;
+@property (nonatomic, copy) NSString     *price;
 @property (nonatomic, copy  ) NSString     *poi_name;
 @property (nonatomic, assign) NSNumber     *leo_id;
 @property (nonatomic, copy  ) NSString     *jump_data;

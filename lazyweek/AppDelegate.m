@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GuidViewController.h"
-#import "HomeViewController.h"
+#import "YCNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
-    HomeViewController *vc = [[HomeViewController alloc] init];
-    self.window.rootViewController = vc;
+    GuidViewController *vc = [[GuidViewController alloc] init];
+    YCNavigationController *nav = [[YCNavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
     
     return YES;
 }

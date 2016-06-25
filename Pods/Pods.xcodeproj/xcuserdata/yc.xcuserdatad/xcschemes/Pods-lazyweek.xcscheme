@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EB8DC185E90874A27A710BBE4A78E594'
+               BlueprintIdentifier = 'DDD25044CBC1CABA9E7669A1DA23979A'
                BlueprintName = 'Pods-lazyweek'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-lazyweek.a'>

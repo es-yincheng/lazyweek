@@ -332,6 +332,9 @@
 		586EF9AF1D1D125B003E7ED0 /* Home_EVENT_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586EF9AD1D1D125B003E7ED0 /* Home_EVENT_Cell.xib */; };
 		586EF9B51D1D31E5003E7ED0 /* YCRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9B41D1D31E5003E7ED0 /* YCRefreshHeader.m */; };
 		586EF9B81D1D3BB2003E7ED0 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 586EF9B71D1D3BB2003E7ED0 /* HomeHeaderView.m */; };
+		588204D91D1E2D1D00834056 /* YCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588204D81D1E2D1D00834056 /* YCNavigationController.m */; };
+		588204DC1D1E3B2E00834056 /* YCNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 588204DB1D1E3B2E00834056 /* YCNavigationItem.m */; };
+		588204DF1D1E3D2000834056 /* YCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 588204DE1D1E3D2000834056 /* YCNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -680,6 +683,12 @@
 		586EF9B41D1D31E5003E7ED0 /* YCRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRefreshHeader.m; sourceTree = "<group>"; };
 		586EF9B61D1D3BB2003E7ED0 /* HomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
 		586EF9B71D1D3BB2003E7ED0 /* HomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderView.m; sourceTree = "<group>"; };
+		588204D71D1E2D1D00834056 /* YCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNavigationController.h; sourceTree = "<group>"; };
+		588204D81D1E2D1D00834056 /* YCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNavigationController.m; sourceTree = "<group>"; };
+		588204DA1D1E3B2E00834056 /* YCNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNavigationItem.h; sourceTree = "<group>"; };
+		588204DB1D1E3B2E00834056 /* YCNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNavigationItem.m; sourceTree = "<group>"; };
+		588204DD1D1E3D2000834056 /* YCNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNavigationBar.h; sourceTree = "<group>"; };
+		588204DE1D1E3D2000834056 /* YCNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNavigationBar.m; sourceTree = "<group>"; };
 		6657BD13AD7B584335BC7D8F /* Pods-lazyweek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lazyweek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lazyweek/Pods-lazyweek.debug.xcconfig"; sourceTree = "<group>"; };
 		A5A67EE29F9B2ADED1E8F1CB /* libPods-lazyweek.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lazyweek.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1232,6 +1241,7 @@
 		586EF9B01D1D31C7003E7ED0 /* YCKit */ = {
 			isa = PBXGroup;
 			children = (
+				588204D61D1E2CBC00834056 /* YCNavigation */,
 				586EF9B11D1D31C7003E7ED0 /* RefreshFooter */,
 				586EF9B21D1D31C7003E7ED0 /* RefreshHeader */,
 				586EF9B61D1D3BB2003E7ED0 /* HomeHeaderView.h */,
@@ -1254,6 +1264,19 @@
 				586EF9B41D1D31E5003E7ED0 /* YCRefreshHeader.m */,
 			);
 			path = RefreshHeader;
+			sourceTree = "<group>";
+		};
+		588204D61D1E2CBC00834056 /* YCNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				588204D71D1E2D1D00834056 /* YCNavigationController.h */,
+				588204D81D1E2D1D00834056 /* YCNavigationController.m */,
+				588204DA1D1E3B2E00834056 /* YCNavigationItem.h */,
+				588204DB1D1E3B2E00834056 /* YCNavigationItem.m */,
+				588204DD1D1E3D2000834056 /* YCNavigationBar.h */,
+				588204DE1D1E3D2000834056 /* YCNavigationBar.m */,
+			);
+			path = YCNavigation;
 			sourceTree = "<group>";
 		};
 		7C4ACE893D0941AB2DDC5002 /* Pods */ = {
@@ -1702,16 +1725,19 @@
 				586EF9A41D1CF69A003E7ED0 /* BaseAPI.m in Sources */,
 				586EF9AA1D1CF73B003E7ED0 /* HomeService.m in Sources */,
 				586EF98B1D1CDAAC003E7ED0 /* NetWorking.m in Sources */,
+				588204DF1D1E3D2000834056 /* YCNavigationBar.m in Sources */,
 				58577CB61D1BB87000EF7C6C /* ViewController.m in Sources */,
 				586EF98E1D1CE09C003E7ED0 /* BaseModel.m in Sources */,
 				58577CB31D1BB87000EF7C6C /* AppDelegate.m in Sources */,
 				586EF9851D1CC628003E7ED0 /* HomeTableViewCell.m in Sources */,
+				588204DC1D1E3B2E00834056 /* YCNavigationItem.m in Sources */,
 				586EF9971D1CE302003E7ED0 /* Home_LEO_Model.m in Sources */,
 				586EF9941D1CE245003E7ED0 /* Home_EVENT_Model.m in Sources */,
 				58577CB01D1BB87000EF7C6C /* main.m in Sources */,
 				586EF9A11D1CE831003E7ED0 /* MBProgressHUD.m in Sources */,
 				586EF9B51D1D31E5003E7ED0 /* YCRefreshHeader.m in Sources */,
 				586EF9811D1CC320003E7ED0 /* HomeViewController.m in Sources */,
+				588204D91D1E2D1D00834056 /* YCNavigationController.m in Sources */,
 				586EF9AE1D1D125B003E7ED0 /* Home_EVENT_Cell.m in Sources */,
 				58577F591D1BBA4C00EF7C6C /* GuidViewController.m in Sources */,
 				586EF9911D1CE0AC003E7ED0 /* HomeModel.m in Sources */,
